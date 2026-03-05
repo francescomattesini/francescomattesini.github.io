@@ -1,137 +1,158 @@
-h1, h2, h3 {
-    margin: 0px 0px 18px 0px;
-    color: #1d1e30 !important;
-    padding: 24px 0px 0px 0px;
-}
-
-p, ul {
-    margin: 18px 0px 18px 0px;
-}
-
-img {
-    margin: 12px 0px 12px 0px;
-    max-width: 75%;
-}
-
-ul {
-    padding-left: 18px;
-}
-
-div#footer {
-    margin: 60px 0px 36px 0px;
-}
-
+/* General Styling */
 html {
-    background-color: #ffffff;
-    font-size: 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 24px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 24px;
 }
 
 body {
-    color: #555;
+  color: #555;
 }
 
+h1, h2, h3 {
+  margin: 0 0 18px;
+  color: #1d1e30 !important;
+  padding: 24px 0 0;
+  font-weight: normal;
+}
+
+h1 { font-size: 26px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+
+p, ul {
+  margin: 18px 0;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+img {
+  margin: 12px 0;
+  max-width: 75%;
+}
+
+blockquote {
+  background: #e6e6e6 url("../images/quote-background.png") no-repeat left top;
+  font-style: italic;
+  margin-left: 18px;
+  padding: 6px 6px 6px 54px;
+}
+
+/* Footer Styling */
+div#footer {
+  margin: 60px 0 36px;
+  font-size: 80%;
+  color: #555;
+}
+
+/* Links */
 a {
-    color: #140de0;
-    text-decoration: none;
-    border-bottom: 0px solid #913179;
+  color: #140de0;
+  text-decoration: none;
+  border-bottom: 0 solid #913179;
 }
 
 a:hover {
   border-bottom: 1px solid #140de0;
 }
 
-div.figure a{
-    border: none;
-}
-
-div.flickr img {
-    border: 1px solid #888;
-    padding: 6px;
-}
-
-div.flickr {
-    margin-top:    60px;
-    margin-bottom: 60px;
+div.figure a {
+  border: none;
 }
 
 a img {
-    margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-pre {
-    font-size: 14px;
-    margin-left: 18px;
-    overflow: auto;
+/* Images */
+img.contactpic {
+  max-width: 40%;
+  max-height: 40%;
+  float: right;
+  margin: 0 0 5px 5px;
 }
 
-@font-face {
-	font-family: 'IosevkaWeb';
-	font-weight: 100;
-	src: url('../fonts/iosevka.woff2') format('woff2'), url('../fonts/iosevka.woff') format('woff');
-}
-
+/* Code Styling */
 code {
   font-family: 'Iosevka', 'IosevkaWeb', monospace;
 }
 
 p code {
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-    font-weight: normal;
+pre {
+  font-size: 14px;
+  margin-left: 18px;
+  overflow: auto;
 }
 
-h1 {
-    font-size: 26px;
+/* Tooltip Styling */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* Dotted underline */
 }
 
-h2 {
-    font-size: 22px;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-size: 80%;
+  line-height: 1.5;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -150px;
+  opacity: 0;
+  transition: opacity 0.1s;
 }
 
-h3 {
-    font-size: 18px;
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
 }
 
-/*ul {
-    list-style-image: url("../images/list-style-image.png");
-}*/
-
-blockquote {
-    background: #e6e6e6 url("../images/quote-background.png") no-repeat left top;
-    font-style: italic;
-    margin-left: 18px;
-    padding: 6px 6px 6px 54px;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
+/* Miscellaneous */
 .soft, .caption {
-    font-style: italic;
-    color: #555;
+  font-style: italic;
+  color: #555;
 }
 
 div.figure {
-    text-align: center;
+  text-align: center;
 }
 
 div.figure p {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 div.footnotes {
-    color: #555;
-    border-left: 1px dashed #555;
+  color: #555;
+  border-left: 1px dashed #555;
 }
 
 div.footnotes hr {
-    display: none;
-}
-
-div#footer {
-    font-size: 80%;
-    color: #555;
+  display: none;
 }
 
 .post-title {
@@ -141,102 +162,52 @@ div#footer {
 
 .post-subtitle {
   color: #555;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .right {
   color: #555;
-  float:right; 
+  float: right;
   font-size: 80%;
 }
 
 .info {
   font-style: italic;
   color: #555;
-  font-size:0.9em;
-}
-
-/*img.photo {
-  float:right;
-  margin: 5px 0 5px 0;
-  border-radius:50%;
-}*/
-
-img.contactpic {
-  max-width:40%;
-  max-height:40%;
-  float:right;
-  margin: 0 0 5px 5px;
+  font-size: 0.9em;
 }
 
 p.tags {
   font-size: 80%;
 }
+
 table {
   border-collapse: collapse;
 }
-tbody>tr>td, tbody>tr>th, tfoot>tr>td, tfoot>tr>th, thead>tr>td, thead>tr>th {
+
+tbody > tr > td,
+tbody > tr > th,
+tfoot > tr > td,
+tfoot > tr > th,
+thead > tr > td,
+thead > tr > th {
   border: 1px solid #ddd;
   padding: 6px;
 }
 
- /* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 6px 0;
-    border-radius: 6px;
-    font-size: 80%;
-    line-height: 1.5;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -150px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.1s;
-}
-.tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #555 transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-/*******************************************************************************
- * Disqus                                                                      *
- ******************************************************************************/
-
-/* Reset list image for disqus */
+/* Disqus Specific */
 div#disqus_thread ul {
-    list-style-image: none;
+  list-style-image: none;
 }
 
 div#dsq-subscribe em {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* Font Face for Iosevka */
+@font-face {
+  font-family: 'IosevkaWeb';
+  font-weight: 100;
+  src: url('../fonts/iosevka.woff2') format('woff2'),
+       url('../fonts/iosevka.woff') format('woff');
+}
