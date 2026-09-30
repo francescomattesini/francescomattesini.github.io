@@ -86,6 +86,29 @@ img.photo {
   }
 }
 
+/* Applies only to pages where <main> has class="numbered-papers" */
+.numbered-papers {
+  counter-reset: papers;
+}
+
+.numbered-papers ol {
+  list-style: none;
+  padding-left: 2.2em;
+}
+
+.numbered-papers ol > li {
+  counter-increment: papers;
+  position: relative;
+}
+
+.numbered-papers ol > li::before {
+  content: counter(papers) ".";
+  position: absolute;
+  left: -2.2em;
+  width: 1.8em;
+  text-align: right;
+}
+
 /* Dark Mode (optional) */
 /*
 @media (prefers-color-scheme: dark) {
