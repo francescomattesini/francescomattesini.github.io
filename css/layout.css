@@ -22,6 +22,7 @@ html, body {
 
 #content {
   margin: 12px;
+  padding-bottom: 80px;
 }
 
 #lightbox {
@@ -33,6 +34,7 @@ html, body {
 /* Photo Styling */
 img.photo {
   width: 25%;
+  height: auto;
   margin: 10px 0 -10px 0;
   border-radius: 50%;
 }
@@ -71,7 +73,7 @@ img.photo {
 
   #content {
     margin: 20px 0 0 206px;
-    padding: 0 36px;
+    padding: 0 36px 120px;
     width: 1000px;
   }
 
@@ -122,3 +124,61 @@ img.photo {
   }
 }
 */
+
+/* Profile icons below the name */
+#navigation .profiles {
+  margin: -6px 0 10px;
+}
+
+#navigation .profiles a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #1d1e30;
+  opacity: 0.6;
+  border: none;
+}
+
+#navigation .profiles a:hover,
+#navigation .profiles a:focus-visible {
+  opacity: 1;
+  border: none;
+}
+
+#navigation .profiles svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+#navigation .profiles a.logo {
+  opacity: 0.85;
+}
+
+#navigation .profiles img {
+  width: auto;
+  height: 20px;
+  max-width: none;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@media all and (min-width: 822px) {
+  #navigation .profiles {
+    margin: -6px 0 12px;
+  }
+
+  #navigation .profiles a {
+    margin: 0 0 0 10px;
+  }
+}
+
+/* Postal address */
+address {
+  font-style: normal;
+  margin: 18px 0;
+}
+
+/* Short summary at the top of the Research page */
+.research-summary {
+  max-width: 760px;
+}

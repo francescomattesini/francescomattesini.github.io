@@ -1,26 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="francesco, mattesini, probability, MPI, TUM, optimal, transport, analysis, probability, mathematics, stochastic, analysis">
-    <meta name="description" content="Francesco's academic webpage.">
+    <meta name="description" content="Francesco Mattesini, postdoc at TU Munich and MCML. Research in probability and optimal transport.">
     <meta itemprop="name" content="Francesco Mattesini">
-    <meta itemprop="image" content="./images/varphi.png">
-    <link rel="icon" href="./images/varphi.png">
+    <meta itemprop="image" content="./icons/favicon-512.png">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/syntax.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Added Google Font -->
     <title>Francesco Mattesini</title>
+
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/favicon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Francesco Mattesini",
+      "url": "https://francescomattesini.github.io/",
+      "jobTitle": "Postdoctoral researcher",
+      "affiliation": [
+        {"@type": "CollegeOrUniversity", "name": "Technische Universität München"},
+        {"@type": "ResearchOrganization", "name": "Munich Center for Machine Learning"}
+      ],
+      "sameAs": ["https://scholar.google.de/citations?user=JCRmt4sAAAAJ", "https://arxiv.org/a/mattesini_f_1.html"]
+    }
+    </script>
 </head>
 <body>
 
     <!-- Navigation Section -->
     <header id="navigation">
-        <img src="./images/fotocluster.jpg" alt="Francesco Mattesini" class="photo">
+        <img src="./images/fotocluster.jpg" alt="Francesco Mattesini" class="photo" width="585" height="600" fetchpriority="high">
         <a href="./index.html"><h1>Francesco Mattesini</h1></a>
+        <div class="profiles">
+            <a href="https://scholar.google.de/citations?user=JCRmt4sAAAAJ&amp;hl=en" class="logo" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+            <a href="https://arxiv.org/a/mattesini_f_1.html" class="logo" title="arXiv" aria-label="arXiv"><img src="./icons/arxiv.png" alt="" width="15" height="20"></a>
+            <a href="mailto:francesco.mattesini@tum.de" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.3V17h16V7.3l-8 5.4-8-5.4zM5.4 7 12 11.5 18.6 7H5.4z"/></svg></a>
+        </div>
         <a href="./index.html">Home</a>
         <a href="./research.html">Research</a>
         <a href="./talks.html">Talks</a>
@@ -37,9 +59,21 @@
 
         <p>Prior to that I was a PhD student in mathematics at the <a href="https://www.uni-muenster.de/Stochastik/en/">Institut für Mathematische Stochastik</a> at the University of Münster and at the <a href="https://www.mis.mpg.de">Max Planck Institute for Mathematics in the Sciences (MPI MiS)</a> in Leipzig, where I was fortunate enough to be advised by <a href="https://www.uni-muenster.de/Stochastik/Arbeitsgruppen/Huesmann/">Martin Huesmann</a> and <a href="https://www.mis.mpg.de/people/felix-otto">Felix Otto</a>. During my PhD I was supported by the Deutsche Forschungsgemeinschaft (DFG) through the <a href="https://spp2265.wias-berlin.de/index.php">SPP 2265</a> and through the Cluster of Excellence <a href="https://www.uni-muenster.de/MathematicsMuenster/">Mathematics Münster</a>, and by the <a href="https://www.mis.mpg.de">Max Planck Institute for Mathematics in the Sciences (MPI MiS)</a>.</p>
 
-        <p>I have received both my bachelor's and master's degrees in mathematics from <a href="https://www.unipi.it/">Universit&agrave; degli studi di Pisa</a>, where I was advised by <a href="https://people.dm.unipi.it/trevisan/">Dario Trevisan</a>.</p>
+        <p>I have received both my bachelor's and master's degrees in mathematics from <a href="https://www.unipi.it/">Universit&agrave; degli studi di Pisa</a>, where I was advised by <a href="https://web.dm.unipi.it/trevisan/en/">Dario Trevisan</a>.</p>
 
-        <p>You can contact me via email at <a href="mailto:francesco.mattesini@tum.de">francesco.mattesini at tum dot de</a>.</p>
+        <h2 id="contact">Contact</h2>
+
+        <p>Email: <a href="mailto:francesco.mattesini@tum.de">francesco.mattesini at tum dot de</a></p>
+
+        <!-- TODO: check department/room; add e.g. "Room 02.08.XXX" as its own line if you like -->
+        <address>
+            Technische Universität München<br>
+            School of Computation, Information and Technology<br>
+            Department of Mathematics<br>
+            Boltzmannstraße 3<br>
+            85748 Garching bei München<br>
+            Germany
+        </address>
     </main>
 
 </body>

@@ -4,30 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="francesco, mattesini, probability, TUM, MPI, optimal, transport, analysis, computer, science">
-  <meta name="description" content="Francesco Mattesini's academic webpage">
-  <meta itemprop="image" content="./images/varphi.png">
+  <meta name="description" content="Preprints and publications of Francesco Mattesini.">
+  <meta itemprop="image" content="./icons/favicon-512.png">
   
   <!-- Open Graph data for social sharing -->
   <meta itemprop="name" content="Francesco Mattesini">
   
   <title>Francesco Mattesini</title>
 
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/favicon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
   <!-- External CSS -->
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/syntax.css">
-
-  <!-- FontAwesome (for icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-
-  <link rel="icon" href="./images/varphi.png">
 </head>
 
 <body>
   <!-- Navigation Section -->
     <header id="navigation">
-        <img src="./images/fotocluster.jpg" alt="Francesco Mattesini" class="photo">
+        <img src="./images/fotocluster.jpg" alt="Francesco Mattesini" class="photo" width="585" height="600" fetchpriority="high">
         <a href="./index.html"><h1>Francesco Mattesini</h1></a>
+        <div class="profiles">
+            <a href="https://scholar.google.de/citations?user=JCRmt4sAAAAJ&amp;hl=en" class="logo" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+            <a href="https://arxiv.org/a/mattesini_f_1.html" class="logo" title="arXiv" aria-label="arXiv"><img src="./icons/arxiv.png" alt="" width="15" height="20"></a>
+            <a href="mailto:francesco.mattesini@tum.de" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.3V17h16V7.3l-8 5.4-8-5.4zM5.4 7 12 11.5 18.6 7H5.4z"/></svg></a>
+        </div>
         <a href="./index.html">Home</a>
         <a href="./research.html">Research</a>
         <a href="./talks.html">Talks</a>
@@ -38,10 +43,23 @@
   <!-- Content Section -->
   <main id="content" class="numbered-papers">
 
+    <section>
+      <h1 id="Summary">Research Summary</h1>
+      <p class="research-summary">I work on optimal transport and its probabilistic aspects. In particular, I specialised in random matching problems and their link to PDEs, adapted optimal transport for stochastic processes with applications to finance, and the analysis of algorithms for sampling and optimization in machine learning.</p>
+    </section>
+
         <!-- Preprints Section -->
     <section>
       <h1 id="Preprints">Preprints</h1>
       <ol>
+        <!-- On hold on arXiv: uncomment when it appears
+        <li>
+      <strong>Adapted Wasserstein Distance for Credit Risk: Rating Information and
+ Model-Transfer Hedging</strong><br>
+      Joint with <a href="https://www.di.univr.it/?ent=persona&id=8773">Luca Di Persio</a>, <i>arXiv</i>, 2026.
+      <a href="https://arxiv.org/abs/2604.22453">[arXiv]</a>
+    </li>
+        -->
         <li>
       <strong>Adapted Wasserstein Barycenters of Gaussian Processes</strong><br>
       Joint with <a href="https://ca.linkedin.com/in/madhu-gunasingam-ab0880112">Madhu Gunasingam</a>, <a href="https://sites.google.com/view/johannes-wiesel">Johannes Wiesel</a> and <a href="https://tkl-wong.github.io">Ting-Kam Leonard Wong</a>, <i>arXiv</i>, 2026.
@@ -49,7 +67,7 @@
     </li>
         <li>
       <strong>Sharp Rates of MMD Empirical Estimation with Power Kernels </strong><br>
-      Joint with <a href="https://cvgmt.sns.it/person/5856/">Francesco Colasanto</a>, <a href="https://people.dimai.unifi.it/focardi/index.html">Matteo Focardi</a> and <a href="https://www.professoren.tum.de/en/fornasier-massimo">Massimo Fornasier</a> <i>arXiv</i>, 2026.
+      Joint with <a href="https://cvgmt.sns.it/person/5856/">Francesco Colasanto</a>, <a href="https://people.dimai.unifi.it/focardi/index.html">Matteo Focardi</a> and <a href="https://www.professoren.tum.de/en/fornasier-massimo">Massimo Fornasier</a>, <i>arXiv</i>, 2026.
       <a href="https://arxiv.org/abs/2605.18497">[arXiv]</a>
     </li>
         <li>
@@ -59,7 +77,7 @@
     </li>
         <li>
           <strong>From Combinatorics to Partial Differential Equations</strong><br>
-          Joint with <a href="https://www.mis.mpg.de/applan/members/felix-otto/cv.html">Felix Otto</a>, <i>arXiv</i>, 2025.
+          Joint with <a href="https://www.mis.mpg.de/people/felix-otto">Felix Otto</a>, <i>arXiv</i>, 2025.
           <a href="https://arxiv.org/abs/2505.10175">[arXiv]</a>
         </li>
       </ol>
