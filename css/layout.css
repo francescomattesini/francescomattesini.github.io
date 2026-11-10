@@ -126,8 +126,16 @@ img.photo {
 */
 
 /* Profile icons below the name */
+#navigation a.name {
+  display: block;
+}
+
+#navigation h1 {
+  margin-bottom: 0;
+}
+
 #navigation .profiles {
-  margin: -6px 0 10px;
+  margin: 15px 0 10px;
 }
 
 #navigation .profiles a {
@@ -164,7 +172,7 @@ img.photo {
 
 @media all and (min-width: 822px) {
   #navigation .profiles {
-    margin: -6px 0 12px;
+    margin: 12px 0 12px;
   }
 
   #navigation .profiles a {
